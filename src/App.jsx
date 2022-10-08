@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="Container">
       <h1 className='title'>Consultar CEP</h1>
-
+ 
       <div className="containerInput">
         <input
           type="text"
