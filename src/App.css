@@ -80,6 +80,13 @@
   flex-wrap: wrap;
 }
 
+footer{
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
 @media(max-width: 600px){
   .title{
     font-size: 60px;

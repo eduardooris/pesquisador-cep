@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div className="Container">
+      <div className="container"></div>
       <h1 className='title'>Consultar CEP</h1>
  
       <div className="containerInput">
@@ -53,6 +54,9 @@ function App() {
         <span>DDD: 0{cep.ddd}</span>
       </main>
     )}
+    <footer>
+      Eduardo Oris
+    </footer>
     </div>
   );
 }
