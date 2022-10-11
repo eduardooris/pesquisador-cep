@@ -15,9 +15,6 @@ function App() {
 
 
   async function handleSearch() {
-    if (input === '') {
-      alert("Preencha o campo corretamente")
-    } 
     try {
       setLoading(true)
       const response = await api.get(`${input}/json`)
@@ -61,7 +58,7 @@ function App() {
 
         <button className='buttonSearch' onClick={handleSearch} ><FiSearch size={25} color="FFF" /></button>
       </div>
-      
+      {loading === true && <Carregando type='spokes' color="white" height={100} width={50} /> }
       {Object.keys(cep).length > 0 && (
         <main className='main'>
           <h2>CEP: {cep.cep}</h2>
